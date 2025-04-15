@@ -1,43 +1,73 @@
-# Connect4
-Monte Carlo Tree Search Based AI Connect 4 Bot
+# 🎮 Connect4 AI 🤖
 
-<p align="center">
-  <img src="https://github.com/Alfo5123/Connect4/blob/master/img/game_example.gif" width="350"/>  
-</p>
+![Connect4 AI Demo](connect4.gif)
 
-## Getting Started
+Welcome to Connect4 AI – the classic board game brought to life with artificial intelligence! Challenge yourself against a computer opponent that uses advanced algorithms to make strategic moves. Whether you're a casual player looking for fun or a strategy enthusiast wanting to test your skills, this game offers an engaging experience for everyone! 🎲✨
 
-### About the game
+## ✨ Features ✨
 
-Connect 4 is a two-player game in which the players take turns dropping colored discs from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs.
+### 🧠 Three Difficulty Levels:
+- 😌 **Easy**: Perfect for casual players or beginners learning the game. The AI makes less calculated moves, giving you room to develop your strategy! 🎯
+- 🤔 **Medium**: A balanced challenge that requires thoughtful planning to win. Test your tactical skills! 💡
+- 😱 **Hard**: Face off against a formidable opponent using maximum search depth. Only the most skilled players will triumph! 🏆
 
-It must be noted that this is a solved game (the first player can always win with *right* moves), the purpose of this project is mianly to implement the algorithm and test its performance in a simple game. We encourage users to find those *right* moves!
+### 🔄 Game Elements:
+- **Classic Connect4 Gameplay**: Drop discs into the grid and try to connect four of your color in a row, column, or diagonal before the AI does! 🎯
+- **Visual Feedback**: Winning combinations are highlighted when the game ends! 🌟
+- **Clean, Modern UI**: A sleek interface with vibrant colors and smooth animations for an enjoyable gaming experience! 🎨
 
-### The algorithm
+## 🎲 What's Under the Hood?
 
-Monte Carlo Tree Search is a recently proposed search method that combines the precision of tree search with the
-generality of random sampling. It does not depend on heuristic function to evaluate the best next move to make, rather it just considers the game mechanics to play random rollouts and get an expected reward after a fixed number of iterations. 
+### AI Logic:
+- **Monte Carlo Tree Search (MCTS)**: 
+  - A powerful algorithm that simulates thousands of possible game outcomes to determine the best move! 🧮
+  - The search depth varies by difficulty level, affecting how "far ahead" the AI can see. 🔍
+  - Uses exploitation vs. exploration balance to find optimal moves without exhaustive search. 🤓
 
-Here we attach some of papers as part of the literature revised for developing this project:
-- **[A Survey of Monte Carlo Tree Search Methods](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=B7BB1338BDE1F287ECFC52AD86AFD055?doi=10.1.1.297.3086&rep=rep1&type=pdf)**
-- **[Monte-Carlo Tree Search and Minimax Hybrids](https://dke.maastrichtuniversity.nl/m.winands/documents/paper%2049.pdf)**
-- **[Score Bounded Monte-Carlo Tree Search](https://pdfs.semanticscholar.org/d2c4/8b5d3fe77521bf0b0b0ec5f0b43e6b5f9723.pdf)**
-- **[On the Dangers of Random Playouts](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.297.4379&rep=rep1&type=pdf)**
+### Game Design:
+- Built with Python and Tkinter for a lightweight, cross-platform experience. 🐍
+- Object-oriented architecture for clean code organization and easy extensibility. 📚
+- Board evaluation using strategic pattern recognition for four-in-a-row detection. 🎯
 
-## Running the game
+## 🚀 How to Play
 
-### Prerequisites
-
-The code was written in Python 2.7. In order to display the game's GUI, we used [Tkinter](https://docs.python.org/2/library/tkinter.html) module, which is the standard Python interface to the Tk GUI toolkit. Although you don't need to download Tkinter since it is an integral part of all Python distributions. In any case, you can find more details about Tkinter installation [here](http://ftp.ntua.gr/mirror/python/topics/tkinter/download.html).
-
-### Run
+1. Clone this repository to your local machine:
+```bash
+git clone https://github.com/yourusername/Connect4-AI.git
+cd Connect4-AI
 ```
-git clone https://github.com/Alfo5123/Connect4.git
-cd Connect4
+
+2. Make sure you have Python installed (Python 3.6 or higher recommended).
+
+3. Launch the game:
+```bash
 python game.py
 ```
 
-Have fun!
+4. Gameplay:
+   - Click on a column to drop your disc (yellow)
+   - Try to connect four discs in a row, column, or diagonal
+   - The AI (red) will automatically make its move after yours
+   - Choose your difficulty level from the dropdown menu
+
+## 🎯 Strategy Tips
+
+- Control the center! The middle columns offer more opportunities to connect four.
+- Think defensively - block the AI's potential winning moves.
+- Plan several moves ahead, especially on higher difficulties.
+- Try different strategies against each difficulty level to improve your skills!
+
+## 📋 Future Enhancements
+
+- Player vs. Player mode
+- Game history and statistics tracking
+- Custom board sizes and game rules
+- Network play capabilities
+
+Enjoy the challenge of strategic thinking and have fun outsmarting the AI! 🎮✨
+
+---
+*Originally created by Alfredo de la Fuente (2017) and enhanced with modern features (2024).*
 
 ## License
 
