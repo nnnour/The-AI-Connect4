@@ -7,8 +7,8 @@ Welcome to Connect4 AI – the classic board game brought to life with artificia
 ## ✨ Features ✨
 
 ### 🧠 Three Difficulty Levels:
-- 😌 **Easy**: Perfect for casual players or beginners learning the game. The AI makes less calculated moves, giving you room to develop your strategy! 🎯
-- 🤔 **Medium**: A balanced challenge that requires thoughtful planning to win. Test your tactical skills! 💡
+- 😌 **Beginner**: Perfect for casual players or beginners learning the game. The AI makes less calculated moves, giving you room to develop your strategy! 🎯
+- 🤔 **Intermediate**: A balanced challenge that requires thoughtful planning to win. Test your tactical skills! 💡
 - 😱 **Hard**: Face off against a formidable opponent using maximum search depth. Only the most skilled players will triumph! 🏆
 
 ### 🔄 Game Elements:
@@ -33,15 +33,15 @@ Welcome to Connect4 AI – the classic board game brought to life with artificia
 
 1. Clone this repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/Connect4-AI.git
-cd Connect4-AI
+git clone https://github.com/nnnour/The-AI-Connect4.git
+cd The-AI-Connect4
 ```
 
 2. Make sure you have Python installed (Python 3.6 or higher recommended).
 
 3. Launch the game:
 ```bash
-python game.py
+python connect4_game.py
 ```
 
 4. Gameplay:
@@ -65,15 +65,4 @@ python game.py
 - Network play capabilities
 
 Enjoy the challenge of strategic thinking and have fun outsmarting the AI! 🎮✨
-
----
-*Originally created by Alfredo de la Fuente (2017) and enhanced with modern features (2024).*
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Alfo5123/Connect4/blob/master/LICENSE) file for details
-
-## Acknowledgments
-
-* Samuel Vidal, for suggesting this challenge.
 
